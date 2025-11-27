@@ -20,6 +20,11 @@ Projekti saatiin päätökseen ...
 
 - Virtuaalikoneen asennus ja käyttöönotto: https://www.virtualbox.org/wiki/Downloads https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
 
+
+<h2>Johdanto</h2>
+
+Projekti toteutetaan Linux-virtuaalikoneen avulla.
+
 ```
 sudo apt-get update
 sudo apt install -y curl wget vim tar gzip lib32gcc-s1 lib32stdc++6
