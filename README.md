@@ -35,6 +35,13 @@ sudo passwd steam
 sudo su - steam
 
 ```
+
+Yhdistäminen toimii
+<img width="915" height="702" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
+
+Pelissä
+
+
 <h2>Lähteet</h2>
 Karvinen, Tero 2025: Palvelinten hallinta. Linkki: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu <br>
 Heinonen, Johanna 2025: How To Install Linux To VirtualBox. Linkki: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md <br>
