@@ -31,7 +31,7 @@ sudo su - steam
 
 ```
 <h2>Lähteet</h2>
-Karvinen Tero 2025, Palvelinten hallinta, Linkki: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu <br>
-Heinonen Johanna 2025, How To Install Linux To VirtualBox, Linkki: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md <br>
-VirtualBox, Download VirtualBox, Linkki: https://www.virtualbox.org/wiki/Downloads <br>
+Karvinen, Tero 2025: Palvelinten hallinta. Linkki: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu <br>
+Heinonen, Johanna 2025: How To Install Linux To VirtualBox. Linkki: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md <br>
+VirtualBox: Download VirtualBox. Linkki: https://www.virtualbox.org/wiki/Downloads <br>
 ChatGPT !!!!!!!!! <br>
