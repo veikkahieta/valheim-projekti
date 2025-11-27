@@ -12,7 +12,7 @@ Projekti saatiin päätökseen ...
 
 <h2>Ympäristö</h2>
 
-- <br>
+- VirtualBox-virtuaalikone Debian Trixie 13<br>
 - <br>
 - <br>
 
