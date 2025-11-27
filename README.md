@@ -5,7 +5,7 @@ Tavoitteena konfiguroida ja luoda pelipalvelin Valheimiin.
 
 ```
 sudo apt-get update
-sudo apt install curl wget vim
+sudo apt install -y curl wget vim tar gzip lib32gcc-s1 lib32stdc++6
 
 
 ```
