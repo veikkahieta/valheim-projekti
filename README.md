@@ -149,8 +149,8 @@ Group=steam
 Type=simple
 WorkingDirectory=/home/steam/valheim_server
 ExecStart=/home/steam/start_valheim.sh
-Restart=on-failure
-RestartSec=5
+Restart=always
+RestartSec=10
 StandardOutput=journal
 StandardError=journal
 
