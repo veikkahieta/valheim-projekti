@@ -126,7 +126,6 @@ cd /home/steam/valheim_server || exit 1
   -world "MyWorld" \
   -password "mypassword" \
   -public 0
-
 ```
 
 **Muutetaan tiedosto suoritettavaksi:**
