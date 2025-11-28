@@ -52,9 +52,8 @@ Projekti saatiin päätökseen ...
 [Valheim Wiki](https://valheim.fandom.com/wiki/Valheim_Wiki)
 
 
-## Johdanto
-
-Projekti toteutetaan Linux-virtuaalikoneen avulla.
+# Toteutus
+## Serverin pystyttäminen
 
 ```
 KOMENNOT:
@@ -123,6 +122,7 @@ sudo ufw allow 2456:2458/udp
 sudo ufw enable
 
 ```
+## Salt-iplementointi
 
 Yhdistäminen toimii
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
