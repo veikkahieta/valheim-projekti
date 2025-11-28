@@ -156,8 +156,10 @@ StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
+```
 
-
+**Käynnistetään daemonit uudelleen:**
+```
 sudo systemctl daemon-reload
 sudo systemctl enable --now valheim.service
 sudo systemctl restart valheim.service
