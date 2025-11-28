@@ -154,6 +154,10 @@ sudo systemctl status valheim
 sudo systemctl enable --now valheim
 ```
 
+<img width="885" height="452" alt="image" src="https://github.com/user-attachments/assets/acec92a3-3bbb-491c-a578-78f676b4c176" />
+
+Tältä statuksen ja lokitietojen tulisi näyttää kun serverin käynnistys on automatisoitu ja lähtee päälle. 
+
 ## Palomuurin salliminen porteille (Vain nämä portit turvallisuussyistä!)
 ```
 sudo ufw allow 2456:2458/udp
@@ -295,7 +299,9 @@ base:
 sudo salt-call --local state.apply
 ```
 
+<img width="393" height="352" alt="image" src="https://github.com/user-attachments/assets/31bafd56-37bd-4dd0-a737-c46affee5b02" />
 
+Kaikki testit näyttäisivät toimivan.
 
 # Lopputulos
 
