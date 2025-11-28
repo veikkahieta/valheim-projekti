@@ -163,7 +163,6 @@ sudo ufw enable
 ```
 
 ## Salt-iplementointi
-tähän salt-koodipätkät
 
 **Luodaan ensin uusi hakemisto salttia varten:**
 ```
