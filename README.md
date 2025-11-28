@@ -1,7 +1,7 @@
 # Valheim-projekti Veikka Hieta ja Duy Phan
 Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.
 
-Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.
+Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin sekä implementoida se Saltilla, virtuaalikoneen avulla.
 
 **Yhdistäminen toimii**
 
@@ -19,7 +19,7 @@ Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.
 
 Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 
-Projekti saatiin päätökseen ...
+Projekti saatiin päätökseen 28.11. klo 17.15.
 
 # Ympäristö
 ## VirtualBox: 
