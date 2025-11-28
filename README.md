@@ -10,7 +10,8 @@ Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.
 
 **Pelissä**
 
-<img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/e01cc8b5-b52c-4a79-bd51-9cb27e2721a9" />
+<img width="1471" height="561" alt="image" src="https://github.com/user-attachments/assets/5062b612-86c9-40f3-a598-06bd418fecb7" />
+
 
 
 ## Aikataulu
