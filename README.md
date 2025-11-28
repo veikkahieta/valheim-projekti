@@ -110,19 +110,23 @@ nano ~/start_valheim.sh
 
 #!/bin/bash
 
-# Set library path for required libraries
+# Library path
 export LD_LIBRARY_PATH="/home/steam/valheim_server:$LD_LIBRARY_PATH"
 
-# Steam App ID for Dedicated Server
+# Steam App ID
 export SteamAppId=896660
 
-# Start the server with your desired settings
+# Change to server folder
+cd /home/steam/valheim_server || exit 1
+
+# Start the server
 ./valheim_server.x86_64 \
   -name "MyValheimServer" \
   -port 2456 \
   -world "MyWorld" \
   -password "mypassword" \
   -public 0
+
 ```
 
 **Muutetaan tiedosto suoritettavaksi:**
