@@ -31,13 +31,13 @@ Projekti saatiin päätökseen ...
 - **Peli:** Valheim (Steam)
 
 ## Lisätiedot
-**VirtualBox**
+- **VirtualBox**
 [Virtuaalikoneen käyttöönotto ja asennus](https://www.virtualbox.org/)
 
-**ISO-tiedosto**
+- **ISO-tiedosto**
 [Latauslinkki](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.2.0-amd64-xfce.iso)
 
-**Tietoa Valheimista**
+- **Tietoa Valheimista**
 [Valheim Wiki](https://valheim.fandom.com/wiki/Valheim_Wiki)
 
 
