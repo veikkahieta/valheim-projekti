@@ -128,6 +128,11 @@ sudo ufw enable
 
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
+**Serverin lisääminen pelissä**
+
+<img width="1615" height="906" alt="image" src="https://github.com/user-attachments/assets/bdd76f6b-9c94-4941-a6ee-b3d0c0245e60" />
+
+
 **Serveri pelissä (IP-osoite peitetty)**
 
 <img width="1609" height="945" alt="image" src="https://github.com/user-attachments/assets/c688b077-acf0-4f30-a634-b2b3f07e2520" />
