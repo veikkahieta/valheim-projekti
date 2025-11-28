@@ -146,7 +146,7 @@ After=network.target
 
 [Service]
 User=steam
-WorkingDirectory=/home/steam
+WorkingDirectory=/home/steam/valheim.server
 ExecStart=/home/steam/start_valheim.sh
 Restart=on-failure
 
