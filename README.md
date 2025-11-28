@@ -18,11 +18,13 @@ Projekti saatiin päätökseen ...
 - Network: Bridged Adapter <br>
 
 <h3>Isäntäkone</h3>
+
 - **Malli:** Acer Aspire A315-42G
 - **Prosessori:** AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx (2.3 GHz)
 - **Näytönohjain:** AMD Radeon(TM) RX Vega 10 Graphics, Radeon 540X series
 - **RAM:** 8 GB
 - **Järjestelmä tyyppi:** 64-bit käyttöjärjestelmä, x64-pohjainen prosessori
+- **Internet:** Lähiverkko, 100 MB/s
 
 <h2>Lisätiedot</h2>
 
