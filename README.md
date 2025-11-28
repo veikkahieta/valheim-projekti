@@ -114,10 +114,10 @@ sudo ufw enable
 ```
 
 Yhdistäminen toimii
-<img width="915" height="702" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
+<img width="515" height="302" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
 Pelissä
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e01cc8b5-b52c-4a79-bd51-9cb27e2721a9" />
+<img width="1560" height="840" alt="image" src="https://github.com/user-attachments/assets/e01cc8b5-b52c-4a79-bd51-9cb27e2721a9" />
 
 
 <h2>Lähteet</h2>
