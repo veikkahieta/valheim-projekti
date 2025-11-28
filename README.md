@@ -12,6 +12,7 @@ Projektin tavoitteena on konfiguroida ja luoda toimiva Valheim-pelipalvelin sek�
 **Pelissä (Pelin nimi täsmää yhdistävän ID:n kanssa)**
 
 
+
 ## Aikataulu
 
 Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
@@ -19,14 +20,15 @@ Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 Projekti saatiin päätökseen 28.11. klo 17.15.
 
 # Ympäristö
-## VirtualBox: 
+## VirtualBox
 
 - **Käyttöjärjestelmä:** Debian 13 Trixie <br>
 - **System:** - Base memory: 2048 <br>
 - **Display:** Video Memory: 16 MB <br>
 - **Network:** Bridged Adapter <br>
 
-## Isäntäkone:
+
+## Isäntäkone
 
 - **Malli:** Acer Aspire A315-42G (kannettava tietokone)
 - **Prosessori:** AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx (2.3 GHz)
@@ -35,11 +37,15 @@ Projekti saatiin päätökseen 28.11. klo 17.15.
 - **Järjestelmä tyyppi:** 64-bit käyttöjärjestelmä, x64-pohjainen prosessori
 - **Internet:** Lähiverkko, 100 MB/s
 
+  
 ## Testaus
+
 - **Rauta:** Toinen tietokone (pöytä), Windows 11 - käyttöjärjestelmällä
 - **Peli:** Valheim (Steam)
 
+
 ## Lisätiedot
+
 - **VirtualBox:**
 [Virtuaalikoneen käyttöönotto ja asennus](https://www.virtualbox.org/)
 
@@ -119,7 +125,7 @@ export SteamAppId=896660
   -public 0
 ```
 
-**Muutetaan tiedosto suoritettavaksi (EXECUTABLE)**
+**Muutetaan tiedosto suoritettavaksi:**
 ```
 chmod +x ~/start_valheim.sh
 ```
