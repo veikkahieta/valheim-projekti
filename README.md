@@ -37,6 +37,9 @@ Projekti saatiin päätökseen ...
 **ISO-tiedosto**
 [Latauslinkki](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.2.0-amd64-xfce.iso)
 
+**Tietoa Valheimista**
+[Valheim Wiki](https://valheim.fandom.com/wiki/Valheim_Wiki)
+
 
 ## Johdanto
 
