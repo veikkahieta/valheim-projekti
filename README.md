@@ -55,48 +55,55 @@ Projekti saatiin päätökseen ...
 # Toteutus
 ## Serverin pystyttäminen
 
+**Pakettien asennus**
 ```
-KOMENNOT:
 sudo apt-get update
 sudo apt install -y curl wget vim tar gzip lib32gcc-s1 lib32stdc++6
+```
 
-
-# new user for cleanliness and keeping server isolated
+**Luodaan uusi käyttäjä siisteyden ylläpitämiseen ja palvelimen eristämiseen**
+```
 sudo useradd -m steam
 sudo passwd steam
 
 sudo su - steam
+```
 
-# proper bash
+**Vaihdetaan oletuskomentorivi bashiin**
+```
 sudo chsh -s /bin/bash steam
 
 sudo su - steam
+```
 
-# 
+**Uusi hakemisto ja SteamCMD:n asennus**
+
+```
 mkdir ~/steamcmd
-cd ~/steamcmd
 
 wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvf steamcmd_linux.tar.gz
+```
 
-# run once to initialize
+**Suoritetaan komento kerran alustamista varten**
+```
 ./steamcmd.sh +quit
+```
 
-# installing dedicated server
+**Asennetaan dedikoitu serveri**
+```
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
+```
 
-# FIX
-mkdir -p ~/.local/share/Steam/steamapps/common/
-mv ~/Steam/steamapps/common/Valheim\ dedicated\ server/ ~/.local/share/Steam/steamapps/common/
-
-#TEST
+**Testi, jolla nähdään että serveri löytyy**
 ls ~/.local/share/Steam/steamapps/common/
 
-
+**Luodaan serverin käynnistys skripti**
+```
 nano ~/start_valheim.sh
 
-# script
+# SCRIPT
 #!/bin/bash
 export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
 export SteamAppId=892970
@@ -111,11 +118,17 @@ cd "$SERVER_DIR"
   -world "MyWorld" \
   -password "mypassword" \
   -public 0
+```
 
+**Muutetaan tiedosto suoritettavaksi (EXECUTABLE)**
+```
 chmod +x ~/start_valheim.sh
+```
 
-# RUN
+**Testataan serverin manuaalista käynnistä**
+```
 ./start_valheim.sh
+```
 
 # ENABLE FIREWALL (AS ROOT)
 sudo ufw allow 2456:2458/udp
