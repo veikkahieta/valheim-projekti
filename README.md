@@ -55,13 +55,13 @@ Projekti saatiin päätökseen ...
 # Toteutus
 ## Asennukset ja serverin pystyttäminen
 
-**Pakettien asennus**
+**Pakettien asennus:**
 ```
 sudo apt-get update
 sudo apt install -y curl wget vim tar gzip lib32gcc-s1 lib32stdc++6
 ```
 
-**Luodaan uusi käyttäjä siisteyden ylläpitämiseen ja palvelimen eristämiseen**
+**Luodaan uusi käyttäjä siisteyden ylläpitämiseen ja palvelimen eristämiseen:**
 ```
 sudo useradd -m steam
 sudo passwd steam
@@ -69,14 +69,14 @@ sudo passwd steam
 sudo su - steam
 ```
 
-**Vaihdetaan oletuskomentorivi bashiin**
+**Vaihdetaan oletuskomentorivi bashiin:**
 ```
 sudo chsh -s /bin/bash steam
 
 sudo su - steam
 ```
 
-**Uusi hakemisto ja SteamCMD:n asennus**
+**Uusi hakemisto ja SteamCMD:n asennus:**
 
 ```
 mkdir ~/steamcmd
@@ -85,21 +85,22 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvf steamcmd_linux.tar.gz
 ```
 
-**Suoritetaan komento kerran alustamista varten**
+**Suoritetaan komento kerran alustamista varten:**
 ```
 ./steamcmd.sh +quit
 ```
 
-**Asennetaan dedikoitu serveri**
+**Asennetaan dedikoitu serveri:**
 ```
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
 ```
 
-Testi, jolla nähdään että serveri löytyy
+**Testi, jolla nähdään että serveri löytyy**
+
 `ls ~/.local/share/Steam/steamapps/common/`
 
-Luodaan serverin käynnistys skripti
+**Luodaan serverin käynnistys skripti:**
 ```
 nano ~/start_valheim.sh
 
@@ -125,7 +126,7 @@ cd "$SERVER_DIR"
 chmod +x ~/start_valheim.sh
 ```
 
-**Testataan serverin manuaalista käynnistä**
+**Testataan serverin manuaalista käynnistä:**
 ```
 ./start_valheim.sh
 ```
@@ -139,7 +140,123 @@ sudo ufw enable
 ## Salt-iplementointi
 tähän salt-koodipätkät
 
-Luodaan ensin uusi hakemisto salttia varten:
+**Luodaan ensin uusi hakemisto salttia varten:**
+```
+sudo mkdir -p ~/srv/salt/valheim
+cd /srv/salt/valheim
+```
+
+**Luodaan kaikki state-tiedostot `sudo nano "nimi"` komennolla skripteineen:**
+
+**dependencies.sls**
+```
+install_dependencies:
+  pkg.installed:
+    - pkgs:
+      - curl
+      - wget
+      - vim
+      - tar
+      - gzip
+      - lib32gcc-s1
+      - lib32stdc++6
+```
+
+**steamcmd.sls**
+```
+create_steam_user:
+  user.present:
+    - name: steam
+    - home: /home/steam
+    - shell: /bin/bash
+ 
+install_steamcmd:
+  file.directory:
+    - name: /home/steam/steamcmd
+    - user: steam
+    - group: steam
+    - mode: 755
+ 
+download_steamcmd:
+  cmd.run:
+    - name: wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz -O /home/steam/steamcmd/steamcmd_linux.tar.gz
+    - creates: /home/steam/steamcmd/steamcmd_linux.tar.gz
+    - user: steam
+    - cwd: /home/steam/steamcmd
+ 
+extract_steamcmd:
+  cmd.run:
+    - name: tar -xvf steamcmd_linux.tar.gz
+    - cwd: /home/steam/steamcmd
+    - creates: /home/steam/steamcmd/steamcmd.sh
+    - user: steam
+```
+
+**valheim.sls**
+```
+install-valheim:
+  cmd.run:
+    - name: "/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir \"/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server\" +app_update 896660 validate +quit"
+    - cwd: /home/steam/steamcmd
+    - user: steam
+    - ignore_retcode: True
+    - unless: test -f "/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server/valheim_server.x86_64"
+```
+
+**startscript.sls**
+```
+valheim_startscript:
+  file.managed:
+    - name: /home/steam/start_valheim.sh
+    - source: salt://valheim/start_valheim.sh
+    - user: steam
+    - group: steam
+    - mode: 755
+```
+
+**service.sls**
+```
+valheim_service_file:
+  file.managed:
+    - name: /etc/systemd/system/valheim.service
+    - source: salt://valheim/valheim.service
+    - user: root
+    - group: root
+    - mode: 644
+valheim_service:
+  service.running:
+    - name: valheim
+    - enable: True
+    - watch:
+      - file: valheim_service_file
+```
+
+**ufw.sls**
+```
+allow_valheim_ports:
+  cmd.run:
+    - name: "ufw allow 2456:2458/udp"
+    - unless: "ufw status | grep 2456"
+```
+
+**init.sls**
+```
+include:
+  - valheim.dependencies
+  - valheim.steamcmd
+  - valheim.valheim
+  - valheim.startscript
+  - valheim.service
+  - valheim.ufw
+```
+
+**Kopioidaan käynnistysskripti ja palvelu-tiedosto saltille**
+
+```
+sudo cp /home/steam/start_valheim.sh /srv/salt/valheim/start_valheim.sh
+sudo cp /etc/systemd/system/valheim.service /srv/salt/valheim/valheim.service
+```
+
 
 # Lopputulos
 
