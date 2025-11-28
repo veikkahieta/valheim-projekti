@@ -28,8 +28,12 @@ Projekti saatiin päätökseen ...
 - **Internet:** Lähiverkko, 100 MB/s
 
 ## Lisätiedot
-
+**VirtualBox**
 [Virtuaalikoneen käyttöönotto ja asennus](https://www.virtualbox.org/)
+
+**ISO-tiedosto**
+[Latauslinkki](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.2.0-amd64-xfce.iso)
+
 
 ## Johdanto
 
