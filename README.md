@@ -306,20 +306,19 @@ Kaikki testit näyttäisivät toimivan.
 
 Lopputuloksena olemme saaneet asennettua ja konfiguroitua Valheim-serveri, joka käynnistyy automaattisesti virtuaalikoneen käynnistyessä. Jäljellä on enää testaaminen pelissä.
 
+<img width="716" height="265" alt="image" src="https://github.com/user-attachments/assets/e75c9095-ada9-4cce-80ee-46b162b0c837" />
 
 **Serverin lisääminen pelissä (IP-osoite ja portti virtuaalikoneesta)**
 
-<img width="716" height="265" alt="image" src="https://github.com/user-attachments/assets/e75c9095-ada9-4cce-80ee-46b162b0c837" />
+<img width="1609" height="945" alt="image" src="https://github.com/user-attachments/assets/c688b077-acf0-4f30-a634-b2b3f07e2520" />
 
 **Serveri pelissä (IP-osoite peitetty)**
 
-<img width="1609" height="945" alt="image" src="https://github.com/user-attachments/assets/c688b077-acf0-4f30-a634-b2b3f07e2520" />
-
 Yhdistetään serveriin, jonka jälkeen se pyytää salasanaa. Salasana on sama kuin minkä olemme määrittäneet "start_valheim.sh" skriptissä. 
 
-**Yhdistäminen toimii**
-
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
+
+**Yhdistäminen toimii**
 
 
 
