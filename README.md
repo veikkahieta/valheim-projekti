@@ -29,7 +29,7 @@ Projekti saatiin päätökseen ...
 - **Display:** Video Memory: 16 MB <br>
 - **Network:** Bridged Adapter <br>
 
-## Isäntäkone
+## Isäntäkone:
 
 - **Malli:** Acer Aspire A315-42G
 - **Prosessori:** AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx (2.3 GHz)
@@ -123,6 +123,9 @@ sudo ufw enable
 
 ```
 ## Salt-iplementointi
+tähän salt-koodipätkät
+
+# Lopputulos
 
 **Yhdistäminen toimii**
 
