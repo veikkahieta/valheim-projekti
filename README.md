@@ -11,9 +11,11 @@ Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 Projekti saatiin päätökseen ...
 
 <h2>Ympäristö</h2>
-<h3>VirtualBox-virtuaalikone Debian Trixie 13</h3>
-- <br>
-- <br>
+<h3>VirtualBox:</h3>
+- Käyttöjärjestelmä: Debian 13 Trixie <br>
+- System: - Base memory: 2048 <br>
+- Display: Video Memory: 16 MB <br>
+- Network: Bridged Adapter <br>
 
 <h3>Isäntäkone</h3>
 
