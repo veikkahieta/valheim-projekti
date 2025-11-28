@@ -77,7 +77,6 @@ sudo su - steam
 ```
 
 **Uusi hakemisto ja SteamCMD:n asennus:**
-
 ```
 mkdir ~/steamcmd
 
@@ -129,6 +128,30 @@ chmod +x ~/start_valheim.sh
 **Testataan serverin manuaalista käynnistä:**
 ```
 ./start_valheim.sh
+```
+
+**Automatisoidaan serveri (Lähtee päälle kun virtuaalikone käynnistyy):**
+```
+sudo nano /etc/systemd/system/valheim.service
+
+[Unit]
+Description=Valheim Dedicated Server
+After=network.target
+
+[Service]
+User=steam
+WorkingDirectory=/home/steam
+ExecStart=/home/steam/start_valheim.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo systemctl restart valheim
+sudo systemctl status valheim
+
+sudo systemctl enable --now valheim
 ```
 
 ## Palomuurin salliminen porteille (Vain nämä portit turvallisuussyistä!)
@@ -256,6 +279,22 @@ include:
 sudo cp /home/steam/start_valheim.sh /srv/salt/valheim/start_valheim.sh
 sudo cp /etc/systemd/system/valheim.service /srv/salt/valheim/valheim.service
 ```
+
+**Luodaan vielä top.sls jolla voidaan käynnistää kaikki statet yhdellä komennolla:**
+```
+cd ..
+sudo nano top.sls
+
+base:
+  '*':
+    - valheim
+```
+
+**Testataan vielä lopuksi statet:**
+```
+sudo salt-call --local state.apply
+```
+
 
 
 # Lopputulos
