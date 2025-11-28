@@ -162,7 +162,7 @@ sudo ufw allow 2456:2458/udp
 sudo ufw enable
 ```
 
-## Salt-iplementointi
+## Salt-implementaatio
 
 **Luodaan ensin uusi hakemisto salttia varten:**
 ```
