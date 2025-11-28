@@ -53,7 +53,7 @@ Projekti saatiin päätökseen ...
 
 
 # Toteutus
-## Serverin pystyttäminen
+## Asennukset ja serverin pystyttäminen
 
 **Pakettien asennus**
 ```
@@ -130,7 +130,7 @@ chmod +x ~/start_valheim.sh
 ./start_valheim.sh
 ```
 
-# ENABLE FIREWALL (AS ROOT)
+## Palomuurin salliminen porteille (Vain nämä portit turvallisuussyistä!)
 sudo ufw allow 2456:2458/udp
 sudo ufw enable
 
