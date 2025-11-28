@@ -302,7 +302,7 @@ Kaikki testit näyttäisivät toimivan.
 
 # Lopputulos
 
-Lopputuloksena olemme saaneet asennettua ja konfiguroitua Valheim-serveri, joka käynnistyy automaattisesti virtuaalikoneen käynnistyessä. Jäljellä on enää testaaminen itse pelissä.
+Lopputuloksena olemme saaneet asennettua ja konfiguroitua Valheim-serveri, joka käynnistyy automaattisesti virtuaalikoneen käynnistyessä. Jäljellä on enää testaaminen pelissä.
 
 
 **Serverin lisääminen pelissä (IP-osoite ja portti virtuaalikoneesta)**
