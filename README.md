@@ -96,10 +96,10 @@ tar -xvf steamcmd_linux.tar.gz
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
 ```
 
-**Testi, jolla nähdään että serveri löytyy**
+Testi, jolla nähdään että serveri löytyy
 `ls ~/.local/share/Steam/steamapps/common/`
 
-**Luodaan serverin käynnistys skripti**
+Luodaan serverin käynnistys skripti
 ```
 nano ~/start_valheim.sh
 
