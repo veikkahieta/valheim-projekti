@@ -97,7 +97,7 @@ tar -xvf steamcmd_linux.tar.gz
 ```
 
 **Testi, jolla nähdään että serveri löytyy**
-ls ~/.local/share/Steam/steamapps/common/
+`ls ~/.local/share/Steam/steamapps/common/`
 
 **Luodaan serverin käynnistys skripti**
 ```
