@@ -3,12 +3,12 @@ Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.
 
 Projektin tavoitteena on konfiguroida ja luoda toimiva Valheim-pelipalvelin sekä toteuttaa sen hallinta idempotenssiksi Saltin avulla.
 
-**Yhdistäminen toimii**
+**Yhdistäminen toimii (Debianos = Hahmon nimi)**
 
 <img width="889" height="271" alt="image" src="https://github.com/user-attachments/assets/456bfe6a-766e-4008-b8ce-59ebcde805d1" />
 
 
-**Pelissä**
+**Pelissä (Pelin nimi täsmää yhdistävän ID:n kanssa)**
 
 <img width="876" height="418" alt="image" src="https://github.com/user-attachments/assets/f4c6e2d4-3f20-4e46-9cdb-62c909702b46" />
 
