@@ -87,7 +87,7 @@ tar -xvf steamcmd_linux.tar.gz
 ./steamcmd.sh +quit
 ```
 
-**Asennetaan dedikoitu serveri:**
+**Asennetaan dedikoitu serveri (Koodi näkyy kaksi kertaa, koska jostain syystä se ei toiminut ekalla kerralla):**
 ```
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
 ./steamcmd.sh +login anonymous +app_update 896660 validate +quit
