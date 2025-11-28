@@ -87,35 +87,43 @@ tar -xvf steamcmd_linux.tar.gz
 ./steamcmd.sh +quit
 ```
 
-**Asennetaan dedikoitu serveri (komennot kaksi kertaa, koska jostain syystä se ei toiminut ekalla kerralla):**
+**Asennetaan dedikoitu serveri:**
 ```
-./steamcmd.sh +login anonymous +app_update 896660 validate +quit
-./steamcmd.sh +login anonymous +app_update 896660 validate +quit
+mkdir -p /home/steam/valheim_server
+cd steamcmd
+./steamcmd.sh +force_install_dir /home/steam/valheim_server +login anonymous +app_update 896660 validate +quit
 ```
 
 **Testi, jolla nähdään että serveri löytyy**
 
-`ls ~/.local/share/Steam/steamapps/common/`
+`ls -l /home/steam/valheim_server`
 
 **Luodaan serverin käynnistys skripti:**
 ```
 nano ~/start_valheim.sh
 
-# SCRIPT
 #!/bin/bash
-export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
-export SteamAppId=892970
 
-SERVER_DIR="$HOME/.local/share/Steam/steamapps/common/Valheim dedicated server"
+# Set library path
+export LD_LIBRARY_PATH="$HOME/valheim_server:$LD_LIBRARY_PATH"
 
-cd "$SERVER_DIR"
+# Correct Steam App ID for Valheim Dedicated Server
+export SteamAppId=896660
 
+# Server install directory
+SERVER_DIR="$HOME/valheim_server"
+
+# Go to server directory
+cd "$SERVER_DIR" || exit
+
+# Start the server
 ./valheim_server.x86_64 \
   -name "MyValheimServer" \
   -port 2456 \
   -world "MyWorld" \
   -password "mypassword" \
   -public 0
+
 ```
 
 **Muutetaan tiedosto suoritettavaksi (EXECUTABLE)**
@@ -222,11 +230,10 @@ extract_steamcmd:
 ```
 install-valheim:
   cmd.run:
-    - name: "/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir \"/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server\" +app_update 896660 validate +quit"
+    - name: "/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/valheim_server +app_update 896660 validate +quit"
     - cwd: /home/steam/steamcmd
     - user: steam
-    - ignore_retcode: True
-    - unless: test -f "/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server/valheim_server.x86_64"
+    - unless: test -f "/home/steam/valheim_server/valheim_server.x86_64"
 ```
 
 **startscript.sls**
