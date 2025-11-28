@@ -10,7 +10,7 @@ Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 
 Projekti saatiin päätökseen ...
 
-<h2>Ympäristö</h2>
+## Ympäristö
 
 ## VirtualBox: 
 
