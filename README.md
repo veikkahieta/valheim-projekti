@@ -29,7 +29,7 @@ Projekti saatiin päätökseen ...
 
 ## Lisätiedot
 
-- Virtuaalikoneen asennus ja käyttöönotto: https://www.virtualbox.org/wiki/Downloads https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
+- [Virtuaalikoneen asennus ja käyttöönotto](https://www.virtualbox.org/wiki/Downloads https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md)
 
 
 ## Johdanto
