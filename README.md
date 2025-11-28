@@ -83,6 +83,7 @@ sudo su - steam
 **Uusi hakemisto ja SteamCMD:n asennus:**
 ```
 mkdir ~/steamcmd
+cd steamcmd
 
 wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvf steamcmd_linux.tar.gz
