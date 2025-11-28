@@ -28,7 +28,7 @@ Projekti saatiin päätökseen 28.11. klo 17.15.
 
 ## Isäntäkone:
 
-- **Malli:** Acer Aspire A315-42G
+- **Malli:** Acer Aspire A315-42G (kannettava tietokone)
 - **Prosessori:** AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx (2.3 GHz)
 - **Näytönohjain:** AMD Radeon(TM) RX Vega 10 Graphics, Radeon 540X series
 - **RAM:** 8 GB
