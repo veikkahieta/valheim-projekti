@@ -1,23 +1,25 @@
-<h1>Valheim-projekti Veikka Hieta ja Duy Phan</h1>
-<h2>Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.</h2>
+# Valheim-projekti Veikka Hieta ja Duy Phan
+Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.
 
-<h3>Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.</h3>
+Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.
 
 
-<h2>Aikataulu</h2>
+## Aikataulu
 
 Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 
 Projekti saatiin päätökseen ...
 
 <h2>Ympäristö</h2>
-<h3>VirtualBox:</h3>
+
+## VirtualBox: 
+
 - Käyttöjärjestelmä: Debian 13 Trixie <br>
 - System: - Base memory: 2048 <br>
 - Display: Video Memory: 16 MB <br>
 - Network: Bridged Adapter <br>
 
-<h3>Isäntäkone</h3>
+## Isäntäkone
 
 - **Malli:** Acer Aspire A315-42G
 - **Prosessori:** AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx (2.3 GHz)
