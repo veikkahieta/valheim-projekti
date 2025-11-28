@@ -131,12 +131,15 @@ chmod +x ~/start_valheim.sh
 ```
 
 ## Palomuurin salliminen porteille (Vain nämä portit turvallisuussyistä!)
+```
 sudo ufw allow 2456:2458/udp
 sudo ufw enable
-
 ```
+
 ## Salt-iplementointi
 tähän salt-koodipätkät
+
+Luodaan ensin uusi hakemisto salttia varten:
 
 # Lopputulos
 
