@@ -1,5 +1,5 @@
 # Valheim-projekti Veikka Hieta ja Duy Phan
-Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.
+Miniprojekti h6, [Tero Karvisen Palvelinten hallinta -kurssille 2025](https://terokarvinen.com/palvelinten-hallinta/).
 
 Projektin tavoitteena on konfiguroida ja luoda toimiva Valheim-pelipalvelin sekä toteuttaa sen hallinta idempotenssiksi Saltin avulla.
 
