@@ -27,6 +27,9 @@ Projekti saatiin päätökseen ...
 - **Järjestelmä tyyppi:** 64-bit käyttöjärjestelmä, x64-pohjainen prosessori
 - **Internet:** Lähiverkko, 100 MB/s
 
+## Testaus
+- **Peli:** Valheim (Steam)
+
 ## Lisätiedot
 **VirtualBox**
 [Virtuaalikoneen käyttöönotto ja asennus](https://www.virtualbox.org/)
