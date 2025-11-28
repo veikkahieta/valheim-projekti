@@ -145,4 +145,4 @@ tähän salt-koodipätkät
 Karvinen, Tero 2025: Palvelinten hallinta. Linkki: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu <br>
 Heinonen, Johanna 2025: How To Install Linux To VirtualBox. Linkki: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md <br>
 VirtualBox: Download VirtualBox. Linkki: https://www.virtualbox.org/wiki/Downloads <br>
-Hyödynnetty ChatGPT 3.5-kielimallia. Syötteenä käytettiin: "I am trying to make a Valheim project for my Linux Debian 13 with Salt, can you help me get started?"<br>
+Hyödynnetty ChatGPT 5.1-kielimallia. Syötteenä käytettiin: "I am trying to make a Valheim project for my Linux Debian 13 with Salt, can you help me get started?"<br>
