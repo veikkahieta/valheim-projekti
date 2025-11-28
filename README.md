@@ -320,7 +320,7 @@ Yhdistetään serveriin, jonka jälkeen se pyytää salasanaa. Salasana on sama 
 
 **Yhdistäminen toimii**
 
-
+Salasanan syötettyä pelissä, virtuaalikoneeseen tulee tiedot siitä että yhteys on muodostettu ja henkilö pystyy tämän jälkeen pelaamaan serverillä. 😄
 
 # Lähteet
 
