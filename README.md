@@ -164,6 +164,8 @@ sudo ufw enable
 
 ## Salt-implementaatio
 
+Saltin rakentamista varten olemme aikaisemmin asentaneet Saltin virtuaalikoneelle. Asennusohjeet löytyvät [Teron sivuilta](https://terokarvinen.com/install-salt-on-debian-13-trixie/).
+
 **Luodaan ensin uusi hakemisto salttia varten:**
 ```
 sudo mkdir -p ~/srv/salt/valheim
@@ -323,7 +325,9 @@ Yhdistetään serveriin, jonka jälkeen se pyytää salasanaa. Salasana on sama 
 
 # Lähteet
 
-Heinonen, J. 27.8.2025. How To Install Linux To VirtualBox?. Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md. Luettu: 27.11.2025.
+Heinonen, J. 27.8.2025. How To Install Linux To VirtualBox?. GitHub. Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md. Luettu: 27.11.2025.
+
+Karvinen, T. 20.10.2025. Install Salt on Debian 13 Trixie. Tero Karvinen. Luettavissa: https://terokarvinen.com/install-salt-on-debian-13-trixie/. Luettu: 28.11.2025
 
 Karvinen, T. 26.3.2025. Palvelinten hallinta. Tero Karvinen. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu. Luettu: 27.11.2025.
 
