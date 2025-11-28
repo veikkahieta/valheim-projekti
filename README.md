@@ -104,26 +104,19 @@ nano ~/start_valheim.sh
 
 #!/bin/bash
 
-# Set library path
-export LD_LIBRARY_PATH="$HOME/valheim_server:$LD_LIBRARY_PATH"
+# Set library path for required libraries
+export LD_LIBRARY_PATH="/home/steam/valheim_server:$LD_LIBRARY_PATH"
 
-# Correct Steam App ID for Valheim Dedicated Server
+# Steam App ID for Dedicated Server
 export SteamAppId=896660
 
-# Server install directory
-SERVER_DIR="$HOME/valheim_server"
-
-# Go to server directory
-cd "$SERVER_DIR" || exit
-
-# Start the server
+# Start the server with your desired settings
 ./valheim_server.x86_64 \
   -name "MyValheimServer" \
   -port 2456 \
   -world "MyWorld" \
   -password "mypassword" \
   -public 0
-
 ```
 
 **Muutetaan tiedosto suoritettavaksi (EXECUTABLE)**
@@ -146,18 +139,23 @@ After=network.target
 
 [Service]
 User=steam
-WorkingDirectory=/home/steam/valheim.server
+Group=steam
+Type=simple
+WorkingDirectory=/home/steam/valheim_server
 ExecStart=/home/steam/start_valheim.sh
 Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
 
-sudo systemctl daemon-reload
-sudo systemctl restart valheim
-sudo systemctl status valheim
 
-sudo systemctl enable --now valheim
+sudo systemctl daemon-reload
+sudo systemctl enable --now valheim.service
+sudo systemctl restart valheim.service
+sudo systemctl status valheim.service
 ```
 
 <img width="885" height="452" alt="image" src="https://github.com/user-attachments/assets/acec92a3-3bbb-491c-a578-78f676b4c176" />
