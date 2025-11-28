@@ -28,12 +28,12 @@ Projekti saatiin päätökseen ...
 - **Järjestelmä tyyppi:** 64-bit käyttöjärjestelmä, x64-pohjainen prosessori
 - **Internet:** Lähiverkko, 100 MB/s
 
-<h2>Lisätiedot</h2>
+## Lisätiedot
 
 - Virtuaalikoneen asennus ja käyttöönotto: https://www.virtualbox.org/wiki/Downloads https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
 
 
-<h2>Johdanto</h2>
+## Johdanto
 
 Projekti toteutetaan Linux-virtuaalikoneen avulla.
 
