@@ -305,11 +305,10 @@ Kaikki testit näyttäisivät toimivan.
 
 # Lopputulos
 
-**Yhdistäminen toimii**
+Lopputuloksena olemme saaneet asennettua ja konfiguroitua Valheim-serveri, joka käynnistyy automaattisesti virtuaalikoneen käynnistyessä. Jäljellä on enää testaaminen itse pelissä.
 
-<img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
-**Serverin lisääminen pelissä**
+**Serverin lisääminen pelissä (IP-osoite ja portti virtuaalikoneesta)**
 
 <img width="716" height="265" alt="image" src="https://github.com/user-attachments/assets/e75c9095-ada9-4cce-80ee-46b162b0c837" />
 
@@ -317,10 +316,20 @@ Kaikki testit näyttäisivät toimivan.
 
 <img width="1609" height="945" alt="image" src="https://github.com/user-attachments/assets/c688b077-acf0-4f30-a634-b2b3f07e2520" />
 
+Yhdistetään serveriin, jonka jälkeen se pyytää salasanaa. Salasana on sama kuin minkä olemme määrittäneet "start_valheim.sh" skriptissä. 
+
+**Yhdistäminen toimii**
+
+<img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
 
-<h2>Lähteet</h2>
-Karvinen, Tero 2025: Palvelinten hallinta. Linkki: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu Luettu 27.11.2025<br>
-Heinonen, Johanna 2025: How To Install Linux To VirtualBox. Linkki: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md Luettu 27.11.2025<br>
-VirtualBox: Download VirtualBox. Linkki: https://www.virtualbox.org/wiki/Downloads Luettu 27.11.2025<br>
-Hyödynnetty ChatGPT 5.1-kielimallia. Syötteenä käytettiin: "I am trying to make a Valheim project for my Linux Debian 13 with Salt, can you help me get started?" 28.11.2025<br>
+
+# Lähteet
+
+Heinonen, J. 27.8.2025. How To Install Linux To VirtualBox?. Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md. Luettu: 27.11.2025.
+
+Karvinen, T. 26.3.2025. Palvelinten hallinta. Tero Karvinen. Luettavissa: https://terokarvinen.com/palvelinten-hallinta/#alustava-aikataulu. Luettu: 27.11.2025.
+
+VirtualBox. Download VirtualBox. Luettavissa: https://www.virtualbox.org/wiki/Downloads. Luettu: 27.11.2025.
+
+Hyödynnetty ChatGPT 5.1-kielimallia. Syötteenä käytettiin: "I am trying to make a Valheim project for my Linux Debian 13 with Salt, can you help me get started?". 28.11.2025.
