@@ -10,14 +10,13 @@ Projekti aloitusaika 27. marraskuuta klo 20.00.<br>
 
 Projekti saatiin päätökseen ...
 
-## Ympäristö
-
+# Ympäristö
 ## VirtualBox: 
 
-- Käyttöjärjestelmä: Debian 13 Trixie <br>
-- System: - Base memory: 2048 <br>
-- Display: Video Memory: 16 MB <br>
-- Network: Bridged Adapter <br>
+- **Käyttöjärjestelmä:** Debian 13 Trixie <br>
+- **System:** - Base memory: 2048 <br>
+- **Display:** Video Memory: 16 MB <br>
+- **Network:** Bridged Adapter <br>
 
 ## Isäntäkone
 
