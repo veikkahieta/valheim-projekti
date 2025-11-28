@@ -124,11 +124,14 @@ sudo ufw enable
 ```
 ## Salt-iplementointi
 
-Yhdistäminen toimii
+**Yhdistäminen toimii**
+
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
-Pelissä
-<img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/e01cc8b5-b52c-4a79-bd51-9cb27e2721a9" />
+**Serveri pelissä (IP-osoite peitetty)**
+
+<img width="1609" height="945" alt="image" src="https://github.com/user-attachments/assets/c688b077-acf0-4f30-a634-b2b3f07e2520" />
+
 
 
 <h2>Lähteet</h2>
