@@ -130,8 +130,7 @@ sudo ufw enable
 
 **Serverin lisääminen pelissä**
 
-<img width="1615" height="906" alt="image" src="https://github.com/user-attachments/assets/bdd76f6b-9c94-4941-a6ee-b3d0c0245e60" />
-
+<img width="716" height="265" alt="image" src="https://github.com/user-attachments/assets/e75c9095-ada9-4cce-80ee-46b162b0c837" />
 
 **Serveri pelissä (IP-osoite peitetty)**
 
