@@ -3,10 +3,12 @@ Miniprojekti h6 Tero Karvisen Palvelinten hallinta -kurssille 2025.
 
 Tavoitteena konfiguroida ja luoda toimiva pelipalvelin Valheimiin.
 
-Yhdistäminen toimii
+**Yhdistäminen toimii**
+
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/0d5b710a-0cbf-413f-8c1b-262523850631" />
 
-Pelissä
+**Pelissä**
+
 <img width="715" height="502" alt="image" src="https://github.com/user-attachments/assets/e01cc8b5-b52c-4a79-bd51-9cb27e2721a9" />
 
 
