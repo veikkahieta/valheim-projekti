@@ -36,6 +36,7 @@ Projekti saatiin päätökseen 28.11. klo 17.15.
 - **Internet:** Lähiverkko, 100 MB/s
 
 ## Testaus
+- **Rauta:** Toinen tietokone (pöytä), Windows 11 - käyttöjärjestelmällä
 - **Peli:** Valheim (Steam)
 
 ## Lisätiedot
