@@ -327,7 +327,7 @@ base:
 sudo salt-call --local state.apply
 ```
 
-<img width="393" height="352" alt="image" src="https://github.com/user-attachments/assets/31bafd56-37bd-4dd0-a737-c46affee5b02" />
+<img width="390" height="327" alt="image" src="https://github.com/user-attachments/assets/b90ea91b-4142-4fd5-87d6-9f58e74f0669" />
 
 Kaikki testit näyttäisivät toimivan.
 
