@@ -96,14 +96,19 @@ tar -xvf steamcmd_linux.tar.gz
 
 **Asennetaan dedikoitu serveri:**
 ```
-mkdir -p /home/steam/valheim_server
-cd steamcmd
-./steamcmd.sh +force_install_dir /home/steam/valheim_server +login anonymous +app_update 896660 validate +quit
+cd
+~/steamcmd/steamcmd.sh +login anonymous +app_update 896660 validate +quit
+```
+
+**Muutetaan serverin lokaatiota:**
+```
+mkdir -p ~/.local/share/Steam/steamapps/common/
+mv ~/Steam/steamapps/common/Valheim\ dedicated\ server/ ~/.local/share/Steam/steamapps/common/
 ```
 
 **Testi, jolla nähdään että serveri löytyy**
 
-`ls -l /home/steam/valheim_server`
+`ls -l .local/share/Steam/steamapps/common/`
 
 **Luodaan serverin käynnistys skripti:**
 ```
@@ -111,22 +116,25 @@ nano ~/start_valheim.sh
 
 #!/bin/bash
 
-# Library path
-export LD_LIBRARY_PATH="/home/steam/valheim_server:$LD_LIBRARY_PATH"
+# Set up environment
+export LD_LIBRARY_PATH="$HOME/.local/share/Steam/steamapps/common/Valheim dedicated server/linux64:$LD_LIBRARY_PATH"
+export SteamAppId=892970
 
-# Steam App ID
-export SteamAppId=896660
+# Server directory
+SERVER_DIR="$HOME/.local/share/Steam/steamapps/common/Valheim dedicated server"
 
-# Change to server folder
-cd /home/steam/valheim_server || exit 1
+# Move to server directory
+cd "$SERVER_DIR" || exit 1
 
-# Start the server
-./valheim_server.x86_64 \
+# Start Valheim server
+exec ./valheim_server.x86_64 \
   -name "MyValheimServer" \
   -port 2456 \
   -world "MyWorld" \
   -password "mypassword" \
-  -public 0
+  -public 0 \
+  -nographics \
+  -batchmode
 ```
 
 **Muutetaan tiedosto suoritettavaksi:**
@@ -149,14 +157,9 @@ After=network.target
 
 [Service]
 User=steam
-Group=steam
-Type=simple
-WorkingDirectory=/home/steam/valheim_server
+WorkingDirectory=/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server
 ExecStart=/home/steam/start_valheim.sh
-Restart=always
-RestartSec=10
-StandardOutput=journal
-StandardError=journal
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
@@ -166,7 +169,6 @@ WantedBy=multi-user.target
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable --now valheim.service
-sudo systemctl restart valheim.service
 sudo systemctl status valheim.service
 ```
 
@@ -238,12 +240,21 @@ extract_steamcmd:
 
 **valheim.sls**
 ```
+valheim-dir:
+  file.directory:
+    - name: "/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server"
+    - user: steam
+    - group: steam
+    - mode: 755
+
 install-valheim:
   cmd.run:
-    - name: "/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/steam/valheim_server +app_update 896660 validate +quit"
+    - name: "/home/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir \"/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server\" +app_update 896660 validate +quit"
     - cwd: /home/steam/steamcmd
     - user: steam
-    - unless: test -f "/home/steam/valheim_server/valheim_server.x86_64"
+    - require:
+      - file: valheim-dir
+    - unless: test -f "/home/steam/.local/share/Steam/steamapps/common/Valheim dedicated server/valheim_server.x86_64"
 ```
 
 **startscript.sls**
