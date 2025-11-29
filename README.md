@@ -111,6 +111,9 @@ mv ~/Steam/steamapps/common/Valheim\ dedicated\ server/ ~/.local/share/Steam/ste
 
 `ls -l .local/share/Steam/steamapps/common/`
 
+<img width="696" height="57" alt="image" src="https://github.com/user-attachments/assets/639ef36e-d1fc-4850-80ff-bf4d686d905a" />
+
+
 **Luodaan serverin käynnistys skripti:**
 ```
 nano ~/start_valheim.sh
