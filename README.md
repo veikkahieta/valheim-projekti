@@ -146,7 +146,7 @@ exec ./valheim_server.x86_64 \
 chmod +x ~/start_valheim.sh
 ```
 
-**Testataan serverin manuaalista käynnistä:**
+**Testataan serverin manuaalista käynnistämistä:**
 ```
 ./start_valheim.sh
 ```
