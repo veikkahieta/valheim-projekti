@@ -62,6 +62,7 @@ Projekti saatiin päätökseen 28.11. klo 17.15.
 **Pakettien asennus:**
 ```
 sudo apt-get update
+sudo apt upgrade -y
 sudo apt install -y curl wget vim tar gzip lib32gcc-s1 lib32stdc++6
 ```
 
